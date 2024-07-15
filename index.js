@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     setTimeout(function() {
         updateDisplay('0'); 
-    }, 3000); 
+    }, 2000); 
 });
 
 let currentExpression = '';
