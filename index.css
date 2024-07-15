@@ -1,0 +1,193 @@
+* {
+   
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(156, 86, 0); /* Background color of the body */
+}
+    #container{
+        display: grid;
+        grid-template-areas: "box1"  "calc""box2" "box2" "box3";
+                                 ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 250px auto 200px;
+        
+
+        background-color:#f8f8ff;
+        width: 850px;
+        height: 650px;
+        align-items: center;
+
+      
+      
+    }
+.outside{
+  background-color: #E5E5E5;
+
+  display: flex;
+  flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+ } 
+   .box1{
+    grid-area: box1;
+    grid-row: 2;
+    margin-top: 100px; 
+    margin-left: 40px;
+    width: 140px;
+    height: 160px;
+    border-radius: 9px;
+    background-color: #f8f8ff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+   }
+
+   .box2{
+    grid-area: box2;
+    grid-column: 3;
+    grid-row: 1;
+    width: 150px;
+    height: 150px;
+    border-radius: 9px;
+    background-color:#f8f8ff;
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+   }
+   #calc{
+    display: grid;
+    grid-template-areas: "button1" "button2 " "button3" "button4";
+    grid-area: calc;
+    grid-column: auto;
+    grid-row:2 ;
+    align-items: center;
+   margin-left: 40px;
+ border-radius: 10px;
+    width: 260px;
+    height: 300px;
+    background-color: rgba(248, 248, 248, 0.123);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+   
+   }
+
+   .box3{
+    
+    grid-area: box3;
+    grid-column: 3;
+    grid-row: 2;
+    margin-top: 257px;
+   
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #fafaff;
+    box-shadow: 10px 10px 30px white;
+    
+   }
+   .btn {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(224, 224, 216);
+    margin: 5px; /* Add margin between buttons */
+}
+
+.btn0 {
+ 
+    grid-row: 6;
+}
+.decimal{
+    grid-row: 6;
+    grid-column: 2;
+
+}
+
+.ans{
+    grid-row: 6;
+    grid-column: 4;
+
+}
+.btn1 {
+    grid-row: 5;
+    grid-column: 1;
+}
+
+.btn2 {
+    grid-row: 5;
+    grid-column: 2;
+}
+
+.btn3 {
+    grid-row: 5;
+    grid-column:3;
+}
+.plus{
+    grid-row: 5;
+    grid-column: 4;
+}
+
+.btn4 {
+    grid-row: 4;
+    grid-column: 1;
+}
+.btn5{
+    grid-row: 4;
+    grid-column: 2;
+
+}
+.btn6{
+    grid-row: 4;
+    grid-column: 3;
+}
+.btn7{
+    grid-row: 2;
+    grid-column: 1;
+}
+.btn8{
+    grid-row: 2;
+    grid-column: 2;
+}
+.btn9{
+    grid-row: 2;
+    grid-column: 3;
+}
+.minus{
+    grid-row: 4;
+    grid-column: 4;
+}
+.star{
+    grid-row: 2;
+    grid-column: 4;
+}
+.divide{
+    grid-row: 1;
+    grid-column: 4;
+}
+.mod{
+    grid-row: 1;
+    grid-column: 3;
+    
+}
+.reset{
+    grid-row: 1;
+    grid-column: 2;
+}
+.icon1{
+
+    width:50px;
+    padding-left: 10px;
+   
+    grid-row: 1;
+    grid-column: 1;
+}
+    
