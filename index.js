@@ -12,7 +12,7 @@ function appendOperator(operator) {
     const lastChar = display.value.charAt(display.value.length - 1);
 
     if (lastChar === '+' || lastChar === '-' || lastChar === '*' || lastChar === '/' || lastChar === '%') {
-        return; // Prevent consecutive operators
+        return; 
     }
 
     display.value += operator;
@@ -32,4 +32,16 @@ function calculateResult() {
     } catch (error) {
         display.value = 'Error';
     }
+}
+document.addEventListener('DOMContentLoaded', function() {
+    
+    setTimeout(function() {
+        updateDisplay('0'); 
+    }, 3000); 
+});
+
+let currentExpression = '';
+
+function updateDisplay(value) {
+    document.getElementById('display').value = value;
 }
