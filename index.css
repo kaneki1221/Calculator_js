@@ -200,6 +200,12 @@ body {
   
     
 }
+.dlt{
+    
+    grid-row: 6;
+    grid-column: 3;
+
+}
     
 .btn:hover {
     background-color: rgb(9, 206, 206) !important;

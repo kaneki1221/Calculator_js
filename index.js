@@ -27,8 +27,11 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    function deleteLastCharacter() {
+        display.value = display.value.slice(0, -1);
+    }
+
     function isValidExpression(expression) {
-      
         const validPattern = /^(\d+(\.\d+)?)([+\-*/%](\d+(\.\d+)?))*$/;
         return validPattern.test(expression);
     }
@@ -83,9 +86,9 @@ document.addEventListener("DOMContentLoaded", () => {
         return values[0];
     }
 
-  
     window.appendNumber = appendNumber;
     window.appendOperator = appendOperator;
     window.clearDisplay = clearDisplay;
     window.calculateResult = calculateResult;
+    window.deleteLastCharacter = deleteLastCharacter;
 });
